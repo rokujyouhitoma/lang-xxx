@@ -1,0 +1,3 @@
+
+compile:
+	rpython main.py
