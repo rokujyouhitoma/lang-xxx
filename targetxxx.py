@@ -1,9 +1,31 @@
+# -*- coding: utf-8 -*-
+
 import os
 import sys
 from xxx.lexer import lexer
 from xxx.parser import parser
 
+def main():
+    from rjanome.lattice import NodeType
+    from rjanome.lattice import BaseNode
+    from rjanome.lattice import Node
+    from rjanome.lattice import BOS
+    from rjanome.lattice import EOS
+    from rjanome.lattice import Lattice
+    _1 = NodeType()
+    _2 = BaseNode()
+    _3 = Node((1,2,3,4,5,6,7,8,9,10))
+    _4 = BOS()
+    _5 = EOS(1)
+    from rjanome.dic import PY3
+    from rjanome.dic import Dictionary
+    _d1 = Dictionary([], 1, [[1],[1,2]])  #TODO: xxx
+    _d1_1 = Lattice(1, _d1)
+    #print(hasattr(_3, 'surface'))
+    #_d1_1.add(_3)
+
 def eval(program_contents):
+    r = main()
     print(parser.parse(lexer.lex(program_contents)).eval())
 
 def run(fp):
