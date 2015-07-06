@@ -1,3 +1,3 @@
 
 compile:
-	rpython main.py
+	rpython --output=xxx-c targetxxx.py
