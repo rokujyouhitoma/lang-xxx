@@ -26,6 +26,8 @@ class BaseNode(object):
     Base node class
     """
     def __init__(self):
+        #MEMO: Add surface property
+        self.surface = 0
         # position in the lattice of this node
         self.pos = 0
         # index of this node
