@@ -22,7 +22,13 @@ def main():
 
     from rjanome.dic import SystemDictionary
     from sysdic import entries, connections, chardef, unknowns
-    SYS_DIC = SystemDictionary(entries.DATA, connections.DATA, chardef.DATA, unknowns.DATA)
+    #SYS_DIC = SystemDictionary(entries.DATA, connections.DATA, chardef.DATA, unknowns.DATA)
+
+    a = {0: (u'\u304d\u3089\u3073\u3084\u304b', 1287, 1287, 8349, u'\u540d\u8a5e,\u5f62\u5bb9\u52d5\u8a5e\u8a9e\u5e79,*,*', u'*', u'*', u'\u304d\u3089\u3073\u3084\u304b', u'\u30ad\u30e9\u30d3\u30e4\u30ab', u'\u30ad\u30e9\u30d3\u30e4\u30ab')}
+    b = [[0,1,2,3]]
+    c = ({u'SPACE': {'LENGTH': 0, 'GROUP': True, 'INVOKE': False}},{})
+
+    SYS_DIC = SystemDictionary(a, b, c, None)
 
     #from sysdic import SYS_DIC
     s = u'４日夜、満月が地球の影に完全に入る「皆既月食」が起きた。'
